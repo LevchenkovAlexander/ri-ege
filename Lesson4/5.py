@@ -8,4 +8,4 @@ if n1 > 0:
     i += 1;
 if n2 > 0:
     i += 1;
-print(i);
+print(i)
