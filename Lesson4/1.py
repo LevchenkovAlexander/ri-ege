@@ -1,27 +1,15 @@
 month = int(input())
-print("Вы родились в", end=' ')
-if month == 1:
-    print("январе")
-elif month == 2:
-    print("феврале")
-elif month == 3:
-    print("марте")
-elif month == 4:
-    print("апреле")
-elif month == 5:
-    print("мае")
-elif month == 6:
-    print("июне")
-elif month == 7:
-    print("июле")
-elif month == 8:
-    print("августе")
-elif month == 9:
-    print("сентябре")
-elif month == 10:
-    print("октябре")
-elif month == 11:
-    print("ноябре")
-elif month == 12:
-    print("декабре")
+print("Вы родились ", end='')
+if month == 1 or month == 2 or month == 12:
+    print("зимой")
+
+elif month == 3 or month == 4 or month == 5:
+    print("весной")
+
+elif month == 6 or month == 7 or month == 8:
+    print("летом")
+
+elif month == 9 or month == 10 or month == 11:
+    print("осенью")
+
 
