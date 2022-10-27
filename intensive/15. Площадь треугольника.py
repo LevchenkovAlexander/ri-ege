@@ -1,4 +1,4 @@
-a = int(input())
-b = int(input())
+a = float(input())
+b = float(input())
 
 print(0.5 * a * b)
