@@ -13,6 +13,7 @@ else:
     print("Not a color")
     color = "error"
 
+
 print(color)
 
 
