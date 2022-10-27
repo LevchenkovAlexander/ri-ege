@@ -1,1 +1,4 @@
-print(0.5 * int(input()) * int(input()))
+a = int(input())
+b = int(input())
+
+print(0.5 * a * b)

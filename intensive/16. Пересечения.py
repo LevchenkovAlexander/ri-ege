@@ -1,9 +1,24 @@
-a1, b1 = [int(i) for i in input().split()]
-a2, b2 = [int(i) for i in input().split()]
+a1 = int(input())
+b1 = int(input())
+a2 = int(input())
+b2 = int(input())
 
-if b1 > a2:
-    print("пересечение: [ ", a2, "; ", b1, " ]")
-elif b1 == a2:
-    print("пересечение - ", b1)
+if a1 < a2:
+    if a1 < a2 and b1 > b2:
+        print("пересечение: [ ", a2, "; ", b2, " ]")
+    elif b1 > a2:
+        print("пересечение: [ ", a2, "; ", b1, " ]")
+    elif b1 == a2:
+        print("пересечение - ", b1)
+    else:
+        print("пересечения нет")
+
 else:
-    print("пересечения нет")
+    if a2 < a1 and b2 > b1:
+        print("пересечение: [ ", a1, "; ", b1, " ]")
+    elif b2 > a1:
+        print("пересечение: [ ", a1, "; ", b2, " ]")
+    elif b2 == a1:
+        print("пересечение - ", b1)
+    else:
+        print("пересечения нет")
