@@ -10,9 +10,8 @@ elif operator == "*":
     result = f * s
 elif operator == "/":
     if s == 0:
-        print("На ноль делить нельзя")
-        result = "error"
+        result = "На ноль делить нельзя"
     else:
         result = f / s
 
-print(f, operator, s, "=", result)
+print(result)
