@@ -6,4 +6,5 @@ elif a == b or a == c or b == c:
     Type = "Равнобедренный"
 else:
     Type = "Разносторонний"
+
 print(Type)

@@ -14,4 +14,5 @@ elif operator == "/":
     else:
         result = f / s
 
+
 print(result)
