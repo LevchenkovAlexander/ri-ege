@@ -36,7 +36,7 @@ elif len(str3) < len(str2) and len(str3) < len(str1):
         else:
             print("NO")
 elif len(str1) == len(str2) == len(str3):
-    print("YES")
+    print("NO")
 
 
 
