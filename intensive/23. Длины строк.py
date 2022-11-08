@@ -35,7 +35,7 @@ elif len(str3) < len(str2) and len(str3) < len(str1):
             print("YES")
         else:
             print("NO")
-elif len(str1) == len(str2) == len(str3):
+else:
     print("NO")
 
 
