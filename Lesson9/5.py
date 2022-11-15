@@ -1,5 +1,4 @@
-from math import ceil
-from math import floor
+from math import ceil, floor
 
 x = float(input())
 
