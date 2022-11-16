@@ -9,8 +9,11 @@ for i in range(n):
     if x > m2:
         if x > m1:
             if x > m0:
+                m2 = m1
+                m1 = m0
                 m0 = x
             else:
+                m2 = m1
                 m1 = x
         else:
             m2 = x
