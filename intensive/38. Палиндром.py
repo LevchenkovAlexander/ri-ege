@@ -8,8 +8,6 @@ while tmp > 0:
     tmp //= 10
     k += 1
 
-_len = k
-
 while k > 0:
     if (n % 10) != (n // 10**(k - 1)):
         is_pol = False
