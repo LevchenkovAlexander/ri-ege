@@ -14,7 +14,7 @@ while k > 0:
     if (n % 10) != (n // 10**(k - 1)):
         is_pol = False
         break
-    n = n % 10**(k - 1)
+    n %= 10**(k - 1)
     n //= 10
     k -= 2
 
