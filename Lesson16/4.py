@@ -1,5 +1,9 @@
+k = 0
+
 for x in range(777):
     for y in range(777):
         if (12 * x + 13 * y) == 777:
-            print(f"({x}; {y})")
+            k += 1
+            print(f"{k} : ({x}; {y})")
 
+print("количество -", k)
