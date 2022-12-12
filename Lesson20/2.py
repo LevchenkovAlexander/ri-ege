@@ -4,6 +4,6 @@ s = input()
 for i in range(len(s)):
     if s[i] == " ":
         s = s[:i] + "\n" + s[i+1:]
-
+        break
 print(s)
 
