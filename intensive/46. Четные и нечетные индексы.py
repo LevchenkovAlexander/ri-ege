@@ -1,6 +1,6 @@
 str1 = input()
-str2 = input()
 
-str3 = str1[::2] + str2[1::2]
+str2 = str1[::2]
+str3 = str1[1::2]
 
-print(str3)
+print(str2, str3)
