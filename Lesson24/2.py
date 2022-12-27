@@ -6,7 +6,7 @@ def good(s):
     for j in range(len(s)-1):
         if s[j] == s[j+1]:
             flag = False
-    return s[0] != "a" and flag
+    return s[0] != "а" and flag
 
 
 alf = "абвгд"
