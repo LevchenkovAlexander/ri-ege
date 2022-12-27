@@ -10,3 +10,4 @@ for i in range(len(s)-1):
     if cnt > max_cnt:
         max_cnt = cnt
 print(max_cnt)
+
