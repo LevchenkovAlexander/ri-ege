@@ -7,11 +7,10 @@ elif (color1 == "красный" and color2 == "желтый") or (color2 == "к
     color = "оранжевый"
 elif color1 == "синий" and color2 == "желтый" or (color2 == "синий" and color1 == "желтый"):
     color = "зеленый"
-elif color1 == color2:
+elif color1 == color2 and color1 == "красный" or color1 == "синий" or color1 == "желтый":
     color = color1
 else:
-    print("Not a color")
-    color = "error"
+    print("ошибка цвета")
 
 
 print(color)
