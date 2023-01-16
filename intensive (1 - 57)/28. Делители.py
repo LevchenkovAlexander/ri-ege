@@ -20,4 +20,8 @@ for i in range(1, n1+1):
                 d2 = n // i
     if i == n ** 0.5:
         c -= 1
-print(c, d0, d1, d2)
+if d2 != 0:
+    print(c, d0, d1, d2)
+else:
+    print(c, d0, d1)
+    print("Третьего делителя нет")
