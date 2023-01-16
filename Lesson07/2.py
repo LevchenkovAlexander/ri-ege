@@ -1,4 +1,4 @@
-a, b, c = [int(i) for i in input().split()]
+a, b, c = [float(i) for i in input().split()]
 
 if a == b == c:
     Type = "Равносторонний"
