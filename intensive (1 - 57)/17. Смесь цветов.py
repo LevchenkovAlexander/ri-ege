@@ -12,7 +12,4 @@ elif color1 == color2 and color1 == "красный" or color1 == "синий" o
 else:
     print("ошибка цвета")
 
-
 print(color)
-
-
