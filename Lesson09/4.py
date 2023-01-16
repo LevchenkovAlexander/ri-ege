@@ -1,23 +1,17 @@
-from math import sqrt
-
 a = float(input())
 b = float(input())
 c = float(input())
 
 D = b**2 - 4*a*c
+d = D**0.5
 
 if D > 0:
-    x1 = (-b + sqrt(D))/2*a
-    x2 = (-b - sqrt(D))/2*a
-    if x1 > x2:
-        print(x1, x2)
-    else:
-        print(x2, x1)
+    x1 = (-b + d)/2*a
+    x2 = (-b - d)/2*a
+    print(x1, x2)
 
-elif (b**2 - 4*a*c) == 0:
-    x1 = (-b + sqrt(D))/2*a
+elif D == 0:
+    x1 = -b/2*a
     print(x1)
 else:
     print("Нет корней")
-
-
