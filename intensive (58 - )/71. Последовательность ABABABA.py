@@ -1,17 +1,21 @@
 s = input()
 max_l = 1
-l = 0
-f = ""
+l = 1
+ans = ""
+ans_m = []
 
-for i in range(len(s)):
-    if s[i] == "A":
-        l += 1
-        f = "A"
-    elif s[i] == "B" and f == "A":
-        l += 1
-        f = "B"
+for i in range(1, len(s)):
+    if (s[i] == "A" and s[i - 1] == "B") or (s[i] == "B" and s[i - 1] == "A"):
+        ans += s[i-1]
     else:
-        l = 0
-
-    max_l = l if max_l < l else max_l
-print(max_l)
+        ans += s[i]
+        ans_m.append(len(ans)) if ans[0] == "A" else ans_m.append(len(ans) - 1)
+        ans = ""
+    
+    if i == len(s) - 1:
+        ans += s[i]
+        ans_m.append(len(ans)) if ans[0] == "A" else ans_m.append(len(ans) - 1)
+        
+    
+    
+print(max(ans_m))
