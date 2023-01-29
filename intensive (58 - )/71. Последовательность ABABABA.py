@@ -7,7 +7,7 @@ for i in range(len(s)):
     if s[i] == "A" and (f == "B" or f == ""):
         l += 1
         f = "A"
-    if s[i] == "B" and f == "A":
+    elif s[i] == "B" and f == "A":
         l += 1
         f = "B"
     else:
