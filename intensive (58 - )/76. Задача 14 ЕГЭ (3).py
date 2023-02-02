@@ -7,7 +7,6 @@ for i in range(2,11):
     while n:
         s = str(n % i) + s
         n //= i
-    print(s, i)
     for j in range(len(s) - 1):
         if s[j] == s[j + 1]:
             flag = True
