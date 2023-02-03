@@ -1,6 +1,4 @@
-file = open('files\\77 intensive.txt')
-f = list(map(int, file))
-file.close()
+f = [int(i) for i in open(f'files\\{input()}.txt').read().splitlines()]
 
 cnt = 0
 
