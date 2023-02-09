@@ -1,14 +1,6 @@
 s = input()
 
-temp = ""
-arr = []
-
-for i in range(len(s)):
-    if s[i] != " ":
-        temp += s[i]
-    if s[i] == " " or i == len(s) - 1:
-        arr.append(int(temp))
-        temp = ""
+arr = list(map(int, s.split()))
         
 index_min = arr.index(min(arr))
 index_max = arr.index(max(arr))
