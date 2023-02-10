@@ -1,8 +1,8 @@
 def f(x):
-    return x % 10 == 6 and x % 3 == 0
+    return abs(x) % 10 == 6 and abs(x) % 3 == 0
 
 
-file = open('files/80.txt')
+file = open('files/test.txt')
 a = list(map(int, file))
 
 p = []
