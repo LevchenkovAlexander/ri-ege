@@ -2,7 +2,7 @@ def f(x):
     return abs(x) % 10 == 6 and abs(x) % 3 == 0
 
 
-file = open('files/test.txt')
+file = open('files/80.txt')
 a = list(map(int, file))
 
 p = []
