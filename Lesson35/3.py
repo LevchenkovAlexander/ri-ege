@@ -19,4 +19,4 @@ for i in range(len(a) - 2):
     tr = a[i:i+3]
     if func(tr) and sum(tr) < sum50:
         p.append(sum(tr))
-print(len(p), max(p))        
+print(len(p), max(p))
