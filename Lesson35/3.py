@@ -1,9 +1,14 @@
+def sum_num(num):
+    return sum( [int(i) for i in str(num)] )
+
+
 def func(t):
-    s = [sum([int(i) for i in str(j)]) for j in t]
-    for i in s:
-        if i in t:
-            return True
+    for i in range(len(t)):
+        for j in range(len(t)):
+            if i != j and sum_num(t[i]) == t[j]:
+                return True
     return False
+
 
 a = [int(i) for i in open('17.7.txt').read().splitlines()]
 sum50_arr = [i for i in a if i % 50 == 0]
