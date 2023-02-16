@@ -1,4 +1,4 @@
-s = open("files\\test.txt").read()
+s = open("files\\86.txt").read()
 
 d = [1 for i in s]
 
