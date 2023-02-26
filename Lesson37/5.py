@@ -1,19 +1,19 @@
-def f(s):
-    return "A" in s and "B" in s and "C" in s
+s = open("Lesson37\\5.txt").read()
 
-
-a = open("Lesson37\\5.txt").read()
-s = ''
+a, b, c = 0, 0, 0
 count = 0
-for i in range(len(a)-1):
-    s += a[i]
-    if f(s+a[i+1]):
-        if len(s) > 2:    
-            count += 1
-            s = ""
-        else: s = a[i]
-    elif i == len(a) - 2 and len(s) > 1: count += 1
 
-            
-                                
+for i in range(len(s)):
+    for j in range(i, len(s)):
+        if s[j] == "A": a += 1
+        if s[j] == "B": b += 1
+        if s[j] == "C": c += 1
+        
+        if a*b*c == 0:
+            if j- i  >= 2:
+                count += 1
+        else:
+            a, b, c = 0, 0, 0
+            break
+        
 print(count)
