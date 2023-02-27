@@ -5,7 +5,7 @@ def dels(num):
         if num % i == 0:
             dels_beg.append(i)
             dels_end.append(num//i)
-    return dels_beg + dels_end[::-1]
+    return dels_beg + dels_end[::-1 ]
 
 for i in range(174457, 174505 + 1):
     d = dels(i)
