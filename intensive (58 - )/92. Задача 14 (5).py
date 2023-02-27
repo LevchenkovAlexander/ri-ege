@@ -1,5 +1,5 @@
 a = 622
-count = 0
+sum = 0
 
 for i in range(2, 11):
     n = a
@@ -7,6 +7,6 @@ for i in range(2, 11):
     while n:
         s = str(n % i) + s
         n //= i
-    if len(s) % 2 == 0: count += 1
+    if len(s) % 2 == 0: sum += i
 
-print(count)
+print(sum)
