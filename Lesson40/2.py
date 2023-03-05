@@ -4,7 +4,4 @@ def divs_f(num):
         if num % i == 0:
             divs.add(i)
             divs.add(num//i)
-    return len(divs)
-
-
-while 1: print(divs_f(int(input())))
+    print(len(divs))
