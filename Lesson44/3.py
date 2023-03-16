@@ -8,4 +8,3 @@ def f(x, y, count):
 
 
 print(f(1, 402, 0))
-    
