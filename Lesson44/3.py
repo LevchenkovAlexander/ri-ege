@@ -1,5 +1,5 @@
 def f(x, y, count):
-    if x == y and count < 4:
+    if x == y and count <= 4:
         return 1
     if x >= y:
         return 0
