@@ -10,6 +10,6 @@ def scale_of_not(num, base):
 sum_ = 0
 for i in range(2, 11):
     num = scale_of_not(609, i)
-    if int(num[-1]) % 2 != int(num[0]):
+    if int(num[-1]) % 2 != int(num[0]) % 2:
         sum_ += i
 print(sum_)
