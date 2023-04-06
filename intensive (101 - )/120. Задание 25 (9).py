@@ -8,7 +8,7 @@ def is_prime(num):
 def divs(num, k, char = []):
     if k == 2 and is_prime(num): 
         char += [num % 10]
-        return sum(char) // len(char) == char[0]
+        return sum(char) / len(char) == char[0]
     
     if k > 2: return 0
     
