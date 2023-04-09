@@ -19,4 +19,3 @@ def game(x, y, z, i, win, func = all):
 print(f'19: {min([s for s in range(1, 24) if game(2, s, 2*s, 0, [2], any)])}')
 print(f'20: {min(arr := [s for s in range(1, 24) if game(2, s, 2*s, 0, [3])]), max(arr)}')
 print(f'21: {[s for s in range(1, 24) if game(2, s, 2*s, 0, [2, 4]) and not(game(2, s, 2*s, 0, [2]) or game(2, s, 2*s, 0, [4])) and not game(2, s, 2*s, 0, [3])]}')
-
