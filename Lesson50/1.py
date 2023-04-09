@@ -4,10 +4,6 @@ def game(x, i, win_i):
     return (all if win_i[0] % 2 == i % 2 else any)([game(x + 3, i + 1, win_i), game(x * 2, i + 1, win_i)])
 
 
-count = 0
-for s in range(1, 33):
-    if game(s, 0, [3]):
-        count += 1
-    if game(s, 0, [2, 4]) and not game(s, 0, [2]):
-        print("21:", s)
-print("20: ", count)
+print(f'19: {min([s for s in range(1, 33) if game(s, 0, [2])])}')
+print(f'20: {len([s for s in range(1, 33) if game(s, 0, [3])])}')
+print(f'21: {(m := [s for s in range(1, 33) if game(s, 0, [2, 4]) and not game(s, 0, [2])])[-2], m[-1]}')
