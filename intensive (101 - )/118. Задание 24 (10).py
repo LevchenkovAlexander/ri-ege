@@ -7,4 +7,4 @@ for i in range(1, len(s)):
 
 for i in range(len(d)):
     if d[i] == max(d):
-        print(s[i], d[i])
+        print(f"\'{s[i]}\'", d[i])
