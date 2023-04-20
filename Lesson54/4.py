@@ -19,7 +19,7 @@ end_fill()
 canvas = getcanvas()
 r = range(-100*m, 100*m, m)
 cnt = 0
-tracer(1000)
+
 for x in r:
     for y in r:
         s = canvas.find_overlapping(x, y, x, y)
