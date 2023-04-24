@@ -5,10 +5,10 @@ a = sorted([int(i) for i in file.read().splitlines()], reverse=True)
 
 disk = []
 
-while sum(disk) + a[-1] < mx:
+while sum(disk) + a[-1] <= mx:
     disk.append(a.pop())
 
-while len(a) and sum(disk[:-1]) + a[-1] < mx:
+while len(a) and sum(disk[:-1]) + a[-1] <= mx:
     disk.pop()
     disk.append(a.pop()) 
 
