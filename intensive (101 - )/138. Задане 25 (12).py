@@ -4,7 +4,7 @@ def is_prime(num):
     for i in range(2, int(num**0.5) + 1):
         if num % i == 0:
             return False
-    return True
+    return num != 1
 
 
 def divs(num):
@@ -18,12 +18,12 @@ def divs(num):
                 divs_end.append(str(n))
     return divs_beg + divs_end[::-1]
 
-
+    
 count = 0
 a = 2352000
 while count < 5:
     f = "".join(d := divs(a))
     if fnmatch(f, "10*29"):
-        print(a, d)
+        print(a, d[-1])
         count += 1
     a += 1
