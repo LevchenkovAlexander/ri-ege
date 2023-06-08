@@ -1,6 +1,6 @@
 a = list(map(int, open("files/145.txt")))
 
-mx = max([i for i in a if i % 127])
+mx = max([i for i in a if i % 127 == 0])
 count = 0
 mn_sum = float("inf")
 
